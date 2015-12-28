@@ -35,23 +35,21 @@ gem 'puma', '~> 2.15', '>= 2.15.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'byebug', '~> 8.2', '>= 8.2.1'
   gem 'dotenv-rails', '~> 2.0', '>= 2.0.2'
   gem 'guard', '~> 2.13'
+  gem 'guard-minitest', '~> 2.4', '>= 2.4.4'
+  gem 'spring', '~> 1.6', '>= 1.6.1'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
 end
 
 group :test do
   gem 'minitest-reporters', '~> 1.1', '>= 1.1.7'
   gem 'mini_backtrace', '~> 0.1.3'
-  gem 'guard-minitest', '~> 2.4', '>= 2.4.4'
 end
 
 group :production do
