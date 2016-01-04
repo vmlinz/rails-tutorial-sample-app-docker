@@ -4,6 +4,8 @@ ruby '2.2.3'
 
 gem 'rails', '4.2.5'
 
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+
 gem 'pg', '~> 0.18.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
