@@ -32,9 +32,12 @@ gem 'bcrypt', '~> 3.1', '>= 3.1.10'
 # Use Unicorn as the app server
 # gem 'unicorn'
 gem 'puma', '~> 2.15', '>= 2.15.3'
-
+gem 'faker', '~> 1.6', '>= 1.6.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'will_paginate', '~> 3.1'
+gem 'bootstrap-will_paginate', '~> 0.0.10'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
