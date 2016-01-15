@@ -19,6 +19,16 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
     end
   end
 
+  test "index with deactivated user" do
+    log_in_as(@admin)
+    @non_admin.toggle!(:activated)
+    get users_path
+    assert_select 'a[href=?]', user_path(@non_admin), count: 0
+    get user_path(@non_admin)
+    follow_redirect!
+    assert_template 'static_pages/home'
+  end
+
   test "index as admin including pagination and delete links" do
     log_in_as(@admin)
     get users_path
