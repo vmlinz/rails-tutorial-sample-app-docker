@@ -1,4 +1,5 @@
 require 'test_helper'
+include UsersHelper
 
 class UsersControllerTest < ActionController::TestCase
   def setup

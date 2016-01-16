@@ -36,6 +36,9 @@ gem 'faker', '~> 1.6', '>= 1.6.1'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# image cloud storage
+gem 'carrierwave-qiniu', '~> 0.2.0'
+
 gem 'will_paginate', '~> 3.1'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
 
